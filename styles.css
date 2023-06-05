@@ -1,0 +1,621 @@
+*, *::before, *::after {
+    box-sizing: border-box; 
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+}
+
+
+/* Navigation and logo container styles */
+.main-nav ul,
+.logo-container ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.main-nav a {
+    color: inherit;
+    margin: 4rem;
+    text-decoration: none;
+}
+
+.main-nav a.underline {
+    text-decoration: underline  #D3A97F 7px;
+}
+
+.main-nav a:hover {
+    color: #adadad;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin-left: 20%;
+}
+
+/* Media query for screen width up to 768px or mobile size */
+@media (max-width: 768px) {
+    .main-header {
+        margin-left: 0; /* Adjusting the margin to remove space on the left side */
+    }
+}
+
+/* Media query for screen width up to 1400px */
+@media (max-width: 1400px) {
+    .main-section {
+        flex-direction: column; /* Changing the flex-direction to stack the elements vertically to fit mobile view */
+    }
+}
+
+/* Logo container styling */
+.logo-container {
+    display: flex; 
+    margin-right: 1rem; 
+}
+
+/* Logo styling */
+.logo {
+    max-width: 2.5rem; /* Limiting the maximum width of the logo */
+    padding: 0.3rem;
+    transition: filter 0.3s ease; /* Adding a transition effect for smooth changes */
+    margin: 0 2rem; /* Adding horizontal margin to the logo */
+}
+
+/* Creating a hover effect for the logo's, to fit with the effect of the header */
+.logo:hover {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.main-section {
+    display: flex;
+    padding: 5rem;
+    margin: 2rem;
+    align-items: center;
+}
+
+.first-section {
+    margin-right: 165px;
+}
+
+.first-section h1 {
+    font-size: 90px;
+    color: #3F3B37;
+}
+
+.first-section h2 {
+    font-size: 30px;
+    color: #959289;
+    font-weight: lighter;
+}
+
+.arrow-btn {
+    font-size: 50px;
+    text-decoration: none;
+    color: #6B5F3A;
+}
+
+.image-gallery {
+    margin: 10px;
+}
+
+.pictures {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.image {
+    max-width: 300px;
+}
+
+
+@media (max-width: 640px) {
+    .first-section h1 {
+        font-size: 48px;
+    }
+
+    .first-section h2 {
+        font-size: 18px;
+    }
+
+    .arrow-btn {
+        font-size: 30px;
+    }
+
+    .image {
+        max-width: 100px;
+    }
+}
+
+.line {
+    border: 1px solid #786D4C;
+    margin-bottom: 2.4375rem;
+}
+
+.section-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.section-nav a {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+
+}
+
+.border-styling {
+    border: #665B34 1px solid;
+    border-radius: 60px 0px 0px 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 14px 100px;
+    font-size: 25px;
+}
+
+.border-styling:hover {
+    background: #D1C7A3;
+    border-radius: 60px;
+}
+
+.chair {
+    background: #D1C7A3;
+    border-radius: 60px;
+ }
+
+ /* containers of all the products */
+
+.product-row {
+display: flex;
+justify-content: space-between;
+}
+
+ /* a container for indivual products, that includes the product image, desc, and buttons*/
+
+.product-item {
+width: 100%;
+text-align: center;
+margin-top: 2rem;
+}
+
+.product-item button {
+background-color: #f8f8f8;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+}
+
+.product-item button:hover {
+background-color: #e0e0e0;
+}
+
+/* Image container to make sure the size of each product image is identical */
+
+.image-container {
+    width: 90%;
+    height: 80%;
+    margin: 1.875rem;
+ }
+    
+    .buttons {
+    margin-right: 2.8rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    padding: 0.25rem;
+ }
+    
+    .desc-container {
+    min-height: 100px;
+    margin-left: 0.125rem;
+}
+    
+    .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.second-container {
+    display: flex;
+    padding: 2rem;
+    height: 100vh; 
+}
+
+.product-desc-container {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 32px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 34px;
+    width: 100%;
+    padding: 1rem;
+}
+
+.product-desc-container h1 {
+    font-size: 3.75rem;
+    overflow-wrap: break-word;
+}
+
+.product-desc-container p {
+    font-size: 1.75rem;
+    line-height: 3rem;
+    overflow-wrap: break-word;
+}
+@media (max-width: 2050px) {
+    .product-desc-container h1 {
+        font-size: 3rem;
+    }
+    .product-desc-container p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 1400px) { /* Target mobile devices like iPhone */
+    .product-desc-container h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+    .product-desc-container p {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+        line-height: 2rem;
+    }
+    .second-container {
+        flex-direction: column; /*Change to column layout for mobile */
+        height: auto;
+    }
+}
+
+.price-container {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.rating-img {
+    max-width: 200px;
+    margin-bottom: 0.5rem;
+}
+
+.product-desc-container h1 {
+    margin-bottom: 0;
+}
+
+.addtocart-btn {
+    background: #645832;
+    border-radius: 40px;
+    padding: 0 3rem;
+    font-size: 1.875rem;
+    max-width: 300px;
+    max-height: 70px;
+}
+
+.addtocart-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.price-container h2 {
+    color: #6E6E6E;
+    font-size: 2.875rem;
+}
+@media (max-width: 2050px) {
+    .addtocart-btn {   
+        padding: 0 2rem;
+        font-size: 1.5rem;
+        
+    }
+    .price-container h2 {
+        font-size: 2.5rem;
+        }
+}
+
+@media (max-width: 1400px) { /* Target mobile devices like iPhone */
+    .addtocart-btn {
+        padding: 0 2rem;
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+    .price-container h2 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+.search-bar {
+display: flex;
+}
+
+.search-bar input {
+flex: 1;
+padding: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.search-bar button {
+color: #fff;
+border: none;
+border-radius: 4px;
+margin-left: 0.5rem;
+cursor: pointer;
+}
+
+/* Search bar button hover effect */
+.search-bar button:hover {
+    background-color: #333;
+}
+
+/* Center-align the title */
+.title-container {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Container for order summary */
+.order-summary-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Header for chair section with right margin */
+.header-chair {
+    margin-right: 75rem;
+    font-size: 25px;
+    width: 100%;
+}
+
+/* Button container for exit button */
+.btn-container {
+    border: none;
+}
+
+/* Exit button style */
+.exit-btn {
+    border: none;
+    background-color: #FFFFFF;
+}
+
+/* Styling for exit button image */
+.exit-btn img {
+    width: 80px;
+}
+
+/* Bottom margin for spacing */
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
+/* Button container with flex layout */
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for minus and plus buttons */
+.minus-button,
+.plus-button {
+    padding: 0.5rem;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #645832;
+    font-weight: bold;
+}
+
+/* Styling for the counter value */
+.counter-value,
+.counter-value2 {
+    margin: 0 10px;
+    font-size: 18px;
+    padding: 1rem;
+}
+
+/* Hover effect for minus and plus buttons */
+.minus-button:hover,
+.plus-button:hover {
+    background-color: #d0d0d0;
+}
+
+/* Container for total price display */
+.total-price-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* Container for checkout button */
+.checkoutbtn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+/* Styling for square-style buttons */
+.square-style-btn,
+.square-style-btn-white {
+    background: #645832;
+    border: 1px solid #645832;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    padding: 1rem 4rem;
+    margin: 1rem;
+    min-width: 15.5rem;
+}
+
+/* Styling for links within square-style buttons */
+.square-style-btn a,
+.square-style-btn-white a {
+    text-decoration: none;
+    color: #E7E2CF;
+}
+
+/* Styling for links within white square-style buttons */
+.square-style-btn-white a {
+    color: #645832;
+    font-weight: lighter;
+}
+
+/* Hover effect for square-style buttons */
+.square-style-btn:hover {
+    background-color: #3d3a28;
+}
+
+/* Styling for white square-style buttons */
+.square-style-btn-white {
+    background-color: #F6F0E0;
+}
+
+/* Hover effect for specific white square-style buttons */
+.square-style-btn-white.custom-hover:hover {
+    background-color: #E8DFC8;
+}
+
+
+
+/* Checkout page styling */
+.shipping-details {
+    max-width: 500px;
+    margin: 0.125rem auto;
+    padding: 20px;
+  }
+
+  .shipping-details h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .shipping-details form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .shipping-details form div {
+    margin-bottom: 40px;
+  }
+
+  .shipping-details label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .shipping-details input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 100%;
+    min-height: 40px;
+  }
+
+  .shipping-details button {
+    padding: 10px;
+    background-color: #645832;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    min-height: 50px ;
+  }
+
+  .btn-summary {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+  }
+
+  .btn-summary button a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  /* Thank you Page Stylying */
+
+  .thank-you-container {
+    height: 80vh;
+    min-width: 300px;
+    margin: 100px;
+    text-align: center;
+}
+
+.checklist-img {
+    height: 300px;
+    width: 400px;
+}
+
+.continue-shop-btn,
+.back-2-homepage-btn {
+    font-size: 15px;
+    padding: 10px 50px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    min-height: 50px;
+}
+
+.continue-shop-btn {
+    color: white;
+    font-weight: bold;
+    background-color: #645832;
+    border: none;
+    margin-right: 20px;
+}
+
+.back-2-homepage-btn {
+    color: #645832;
+    background-color: #F6F0E0;
+    border: 1px #645832 solid;
+}
+
+.text-container {
+    max-width: 600px;
+    margin: 90px auto;
+}
+
+.thank-you-container h1,
+.thank-you-container p {
+    font-size: 30px;
+    color: #645832;
+}
+
+.thank-you-container h1 {
+    font-size: 60px;
+    color: #645832;
+}
+
+.continue-shop-btn:hover {
+    background-color: #3d3a28;
+}
+
+.back-2-homepage-btn:hover {
+    background-color: #f2e0ae
+}

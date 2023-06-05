@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-listing-chair</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+              <li><a href="homepage.html">Home</a></li>
+              <li><a class="underline" href="product-listing.html">Shop</a></li>
+              <li><a>About</a></li>
+              <li><a>Contact</a></li>
+        </nav>
+              <div class="logo-container">
+                <ul>
+                    <li><a href="#"><img class="logo" src="Images/customer-support.png" alt="Customer Support"></a></li>
+                    <li><a href="product-listing-searchbar.html"><img class="logo" src="Images/search.png" alt="Search"></a></li>
+                    <li><a href="#"><img class="logo" src="Images/heart.png" alt="Heart"></a></li>
+                    <li><a href="shoppingcart-page.html"><img class="logo" src="Images/shopping-cart.png" alt="Shopping Cart"></a></li>
+                </ul>
+              </div>       
+    </header> 
+
+    <div class="line"></div>
+    <div class="title-container">
+        <h1>Order Summary</h1>
+    </div>
+    <div class="line"></div>
+    <div class="order-summary-container">
+                <!-- First product, Satin White Chair -->
+        <div class="image-container">
+            <img class="product-image-chair" src="Images/brooke-chair.png" alt="Product 1">
+        </div>
+        <div class="header-chair">
+          <h2>Brooke Chair - Satin White</h2>
+          <p>Price</p>
+          <div class="buttons">
+            <button class="minus-button" onclick="minusButton()">—</button>
+            <span class="counter-value">0</span>
+            <button class="plus-button" onclick="plusButton()">+</button>
+        </div>
+      </div>      
+        <div class="btn-container">
+            <button class="exit-btn"><img src="Images/exit.png"></button>
+        </div>
+    </div>
+    <div class="line margin-bottom"></div>
+
+    <div class="line"></div>
+
+    <div class="order-summary-container">
+                <!-- Second product, Atlantis Cabinet -->
+        <div class="image-container">
+            <img class="product-image-chair" src="Images/atlantis-cabinet.png" alt="Product 1">
+        </div>
+        <div class="header-chair">
+            <h2>Atlantis Cabinet</h2>
+                <p>Price</p>
+                <div class="buttons">
+                    <button class="minus-button" onclick="minusButton2()">—</button>
+                    <span class="counter-value2">0</span>
+                    <button class="plus-button" onclick="plusButton2()">+</button>
+                </div>
+        </div>
+        <div class="btn-container">
+            <button class="exit-btn"><img src="Images/exit.png"></button>
+        </div>
+    </div>
+    <div class="line margin-bottom"></div>
+    <div class="line"></div>
+    <div class="total-price-container">
+        <h1>Grand Total INCL. TAX</h1>
+        <h1>$ 4,134</h1>
+    </div>
+
+    <div class="line"></div>
+    <div class="checkoutbtn-container">
+        <button class="square-style-btn"><a href="checkout-page.html">Proceed to Checkout</a></button>
+        <button class="square-style-btn-white custom-hover"><a href="product-page-decor.html">Back</a></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

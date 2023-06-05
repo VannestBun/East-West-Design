@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-listing-chair</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+              <li><a href="homepage.html">Home</a></li>
+              <li><a class="underline" href="product-listing.html">Shop</a></li>
+              <li><a>About</a></li>
+              <li><a>Contact</a></li>
+        </nav>
+              <div class="logo-container">
+                <ul>
+                    <li><a href="#"><img class="logo" src="Images/customer-support.png" alt="Customer Support"></a></li>
+                    <li><a href="product-listing-searchbar.html"><img class="logo" src="Images/search.png" alt="Search"></a></li>
+                    <li><a href="#"><img class="logo" src="Images/heart.png" alt="Heart"></a></li>
+                    <li><a href="shoppingcart-page.html"><img class="logo" src="Images/shopping-cart.png" alt="Shopping Cart"></a></li>
+                </ul>
+              </div>       
+    </header>
+    
+    <div class="line"></div>
+
+    <div class="title-container">
+        <h1>Billing Address</h1>
+    </div>
+
+    <section class="shipping-details">
+        <h2>Shipping Details</h2>
+        <form>
+          <div>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+          </div>
+          <div>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+          </div>
+          <div>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+          </div>
+          <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city" required>
+          </div>
+          <div>
+            <label for="zipcode">Zip Code:</label>
+            <input type="text" id="zipcode" name="zipcode" placeholder="Enter your zip code" required>
+          </div>
+          <div class="btn-summary">
+            <button type="submit"><a href="thankyou.html">Confirm</a></button>
+            <button><a href="shoppingcart-page.html">Back</a></button>
+          </div>
+        </form>
+      </section>
+</body>
+</html>
